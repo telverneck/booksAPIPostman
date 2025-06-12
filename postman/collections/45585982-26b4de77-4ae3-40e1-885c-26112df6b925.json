@@ -194,7 +194,7 @@
 					"response": []
 				},
 				{
-					"name": "Books with id Copy",
+					"name": "Books with invalid id - text",
 					"id": "45585982-df851e1e-c8bc-48a3-8cf9-6df9063e4203",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
