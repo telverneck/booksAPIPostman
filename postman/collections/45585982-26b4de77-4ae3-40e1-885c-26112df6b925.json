@@ -203,13 +203,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books/{{bookiD}}",
+							"raw": "{{base_utl}}/books/noID",
 							"host": [
 								"{{base_utl}}"
 							],
 							"path": [
 								"books",
-								"{{bookiD}}"
+								"noID"
 							],
 							"query": [
 								{
@@ -462,15 +462,25 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Postman\",\r\n   \"clientEmail\": \"telmo.rodrigues.correa@outlook.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "{{base_utl}}/status",
+					"raw": "{{base_utl}}/api-clients/",
 					"host": [
 						"{{base_utl}}"
 					],
 					"path": [
-						"status"
+						"api-clients",
+						""
 					]
 				}
 			},
