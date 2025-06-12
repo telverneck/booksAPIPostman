@@ -289,7 +289,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\r\n{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"John\"\r\n}",
+							"raw": "{\r\n  \"customerName\": \"John1111\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -297,12 +297,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders",
+							"raw": "{{base_utl}}/orders/11W_dZrMFLx0glXEtRDGx",
 							"host": [
 								"{{base_utl}}"
 							],
 							"path": [
-								"orders"
+								"orders",
+								"11W_dZrMFLx0glXEtRDGx"
 							]
 						}
 					},
