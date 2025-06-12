@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "45585982-26b4de77-4ae3-40e1-885c-26112df6b925",
+		"name": "BooksAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Books",
+					"id": "45585982-e4a15d8f-27d5-4807-a67e-520781ce8b00",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with parameters",
+					"id": "45585982-04362736-cfad-45a1-80ce-b0a66be5a260",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books?type=fiction",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with parameters Type not found",
+					"id": "45585982-c97ceaf8-8000-4b74-ac91-d3442b51ee89",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books?type=horror",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "horror"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with parameters 2",
+					"id": "45585982-352ed561-910e-49de-ad6c-618200e36881",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books?limit=2",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with parameters - out of limit",
+					"id": "45585982-fc5ade1d-7876-4e1a-b23b-b01f725537bf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books?limit=-2",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "-2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with parameters - out of limit 2",
+					"id": "45585982-5820ec09-08e8-4aae-8e2a-1f1820fd3b62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books?limit=21",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with id",
+					"id": "45585982-da4fbd59-1947-451b-be1b-c71473260615",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books/{{bookiD}}",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books",
+								"{{bookiD}}"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Books with id Copy",
+					"id": "45585982-df851e1e-c8bc-48a3-8cf9-6df9063e4203",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_utl}}/books/{{bookiD}}",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"books",
+								"{{bookiD}}"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "45585982-66a74ee6-02c6-4b0a-89f5-412b56096611"
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Submit order",
+					"id": "45585982-ea43696d-f810-4a05-b773-27b5885d421f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_utl}}/orders",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update order",
+					"id": "45585982-b3443343-ab55-4064-a9a8-d9969973f9fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"bookId\": 1,\r\n  \"customerName\": \"John\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_utl}}/orders",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete order",
+					"id": "45585982-22d1bc00-07c7-4416-bdf1-ab7e19c31dac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_utl}}/orders/wq462wfEnTgO_SICEkAX9",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"orders",
+								"wq462wfEnTgO_SICEkAX9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders",
+					"id": "45585982-87c0d397-f527-4f44-b82b-5c0052a208c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_utl}}/orders/11W_dZrMFLx0glXEtRDGx",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"orders",
+								"11W_dZrMFLx0glXEtRDGx"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Orders with ID",
+					"id": "45585982-097a14d0-a996-420a-87aa-ddb22905cefa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_utl}}/orders/11W_dZrMFLx0glXEtRDGx",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"orders",
+								"11W_dZrMFLx0glXEtRDGx"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "45585982-b7dc15cd-9655-4e7f-8449-1feda889864b"
+		},
+		{
+			"name": "Check API usage",
+			"id": "45585982-2ea3b713-da23-4e30-82e9-d18df0dd676b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_utl}}/status",
+					"host": [
+						"{{base_utl}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Authentication",
+			"id": "45585982-916a9387-ff0f-49a9-a880-7c2370777ad6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_utl}}/status",
+					"host": [
+						"{{base_utl}}"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
