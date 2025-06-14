@@ -524,8 +524,8 @@
 							"script": {
 								"id": "e6b22f5e-094c-44a9-98b9-b852dec2547d",
 								"exec": [
-									"pm.test(\"Status code is 201\", function () {\r",
-									"    pm.response.to.have.status(201);\r",
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
 								"type": "text/javascript",
