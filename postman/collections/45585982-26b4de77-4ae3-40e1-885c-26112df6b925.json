@@ -468,8 +468,8 @@
 							"script": {
 								"id": "43020eed-d342-4a92-a8d0-523647817b16",
 								"exec": [
-									"pm.test(\"Status code is 201\", function () {\r",
-									"    pm.response.to.have.status(201);\r",
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
 									"});"
 								],
 								"type": "text/javascript",
