@@ -419,9 +419,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders",
+							"raw": "{{base_url}}/orders",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"orders"
