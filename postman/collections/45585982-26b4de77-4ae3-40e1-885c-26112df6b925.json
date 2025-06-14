@@ -517,62 +517,6 @@
 					"response": []
 				},
 				{
-					"name": "Delete order",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "e6b22f5e-094c-44a9-98b9-b852dec2547d",
-								"exec": [
-									"pm.test(\"Status code is 204\", function () {\r",
-									"    pm.response.to.have.status(204);\r",
-									"});"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "45585982-22d1bc00-07c7-4416-bdf1-ab7e19c31dac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{access_token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{base_url}}/orders/{{orderId}}",
-							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"orders",
-								"{{orderId}}"
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Orders",
 					"event": [
 						{
@@ -678,6 +622,62 @@
 							"path": [
 								"orders",
 								"11W_dZrMFLx0glXEtRDGx"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e6b22f5e-094c-44a9-98b9-b852dec2547d",
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "45585982-22d1bc00-07c7-4416-bdf1-ab7e19c31dac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/orders/{{orderId}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders",
+								"{{orderId}}"
 							]
 						}
 					},
