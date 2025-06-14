@@ -183,6 +183,10 @@
 								"exec": [
 									"pm.test(\"Status code is 400\", function () {\r",
 									"    pm.response.to.have.status(400);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Search for Invalid text \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Invalid value for query parameter\");\r",
 									"});"
 								],
 								"type": "text/javascript",
