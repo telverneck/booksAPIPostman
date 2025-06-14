@@ -230,6 +230,21 @@
 			"item": [
 				{
 					"name": "Submit order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d281300a-0755-465f-952f-646f5b7f5bdb",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-ea43696d-f810-4a05-b773-27b5885d421f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
