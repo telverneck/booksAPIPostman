@@ -688,6 +688,21 @@
 		},
 		{
 			"name": "Check API usage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fe3b6f44-624a-4790-9f10-e6f591ce3bb4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
 			"id": "45585982-2ea3b713-da23-4e30-82e9-d18df0dd676b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
