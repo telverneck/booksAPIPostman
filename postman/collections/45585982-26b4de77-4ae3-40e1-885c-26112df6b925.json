@@ -462,6 +462,21 @@
 				},
 				{
 					"name": "Update order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "43020eed-d342-4a92-a8d0-523647817b16",
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-b3443343-ab55-4064-a9a8-d9969973f9fb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -481,7 +496,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"customerName\": \"John1111\"\r\n}",
+							"raw": "{\r\n  \"customerName\": \"John22222\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -489,13 +504,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/orders/11W_dZrMFLx0glXEtRDGx",
+							"raw": "{{base_url}}/orders/{{orderId}}",
 							"host": [
 								"{{base_url}}"
 							],
 							"path": [
 								"orders",
-								"11W_dZrMFLx0glXEtRDGx"
+								"{{orderId}}"
 							]
 						}
 					},
