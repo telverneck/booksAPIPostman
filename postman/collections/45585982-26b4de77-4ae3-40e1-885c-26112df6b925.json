@@ -257,9 +257,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders",
+							"raw": "{{base_url}}/orders",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"orders"
@@ -289,7 +289,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\r\n{\r\n  \"bookId\": \"1\",\r\n  \"customerName\": \"John2\"\r\n}",
+							"raw": "\r\n{\r\n  \"bookId\": \"2\",\r\n  \"customerName\": \"John2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -297,9 +297,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders",
+							"raw": "{{base_url}}/orders",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"orders"
