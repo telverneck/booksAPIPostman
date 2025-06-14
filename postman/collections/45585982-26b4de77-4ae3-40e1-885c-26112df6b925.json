@@ -413,8 +413,8 @@
 							"script": {
 								"id": "1bdfe4f9-b58c-4dc4-b0d9-36e22a7af4da",
 								"exec": [
-									"pm.test(\"Status code is 400\", function () {\r",
-									"    pm.response.to.have.status(400);\r",
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
 									"});"
 								],
 								"type": "text/javascript",
