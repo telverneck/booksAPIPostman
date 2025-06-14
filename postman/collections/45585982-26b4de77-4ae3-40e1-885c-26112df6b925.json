@@ -269,6 +269,46 @@
 					"response": []
 				},
 				{
+					"name": "Submit order Copy",
+					"id": "45585982-21702143-86c8-4ee6-910b-b99569eb018a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"bookId\": \"1\",\r\n  \"customerName\": \"John2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_utl}}/orders",
+							"host": [
+								"{{base_utl}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Update order",
 					"id": "45585982-b3443343-ab55-4064-a9a8-d9969973f9fb",
 					"protocolProfileBehavior": {
