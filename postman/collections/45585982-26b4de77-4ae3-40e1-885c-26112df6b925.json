@@ -459,9 +459,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders/11W_dZrMFLx0glXEtRDGx",
+							"raw": "{{base_url}}/orders/11W_dZrMFLx0glXEtRDGx",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"orders",
@@ -484,9 +484,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{base_utl}}/status",
+					"raw": "{{base_url}}/status",
 					"host": [
-						"{{base_utl}}"
+						"{{base_url}}"
 					],
 					"path": [
 						"status"
@@ -514,9 +514,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_utl}}/api-clients/",
+					"raw": "{{base_url}}/api-clients/",
 					"host": [
-						"{{base_utl}}"
+						"{{base_url}}"
 					],
 					"path": [
 						"api-clients",
