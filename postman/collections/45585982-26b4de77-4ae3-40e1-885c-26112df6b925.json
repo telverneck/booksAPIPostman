@@ -337,9 +337,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders/11W_dZrMFLx0glXEtRDGx",
+							"raw": "{{base_url}}/orders/11W_dZrMFLx0glXEtRDGx",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"orders",
@@ -378,9 +378,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_utl}}/orders/wq462wfEnTgO_SICEkAX9",
+							"raw": "{{base_url}}/orders/wq462wfEnTgO_SICEkAX9",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"orders",
