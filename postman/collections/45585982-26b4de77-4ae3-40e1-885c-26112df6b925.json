@@ -46,6 +46,21 @@
 				},
 				{
 					"name": "Books with parameters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4065b0e4-4cdf-405d-a9f7-552de07b5b1c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-04362736-cfad-45a1-80ce-b0a66be5a260",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
