@@ -359,7 +359,7 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"pm.environment.get(\"orderId\");\r",
+									"let response = pm.response.json();\r",
 									"pm.environment.set(\"orderId\", response.orderId);"
 								],
 								"type": "text/javascript",
