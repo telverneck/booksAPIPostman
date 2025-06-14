@@ -147,9 +147,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books?limit=21",
+							"raw": "{{base_url}}/books?limit=21",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books"
@@ -174,9 +174,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books/{{bookiD}}",
+							"raw": "{{base_url}}/books/{{bookiD}}",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books",
@@ -203,9 +203,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books/noID",
+							"raw": "{{base_url}}/books/noID",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books",
