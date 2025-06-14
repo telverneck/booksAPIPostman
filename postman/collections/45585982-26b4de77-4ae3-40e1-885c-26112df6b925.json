@@ -300,6 +300,21 @@
 				},
 				{
 					"name": "Books with invalid id - text",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9a050a4-7ae5-4e7d-8211-56ec5233c547",
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-df851e1e-c8bc-48a3-8cf9-6df9063e4203",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
