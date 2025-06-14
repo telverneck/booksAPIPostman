@@ -10,6 +10,21 @@
 			"item": [
 				{
 					"name": "Books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e1a7264b-399a-42f2-8dbc-59301ceebec6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-e4a15d8f-27d5-4807-a67e-520781ce8b00",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
