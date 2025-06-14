@@ -574,6 +574,21 @@
 				},
 				{
 					"name": "Orders",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fcff49b9-8372-44e4-93b5-b266df4bb797",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-87c0d397-f527-4f44-b82b-5c0052a208c0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -614,6 +629,21 @@
 				},
 				{
 					"name": "Orders with ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "93459adc-ea4e-4a4c-a92d-1d216efeb373",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-097a14d0-a996-420a-87aa-ddb22905cefa",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
