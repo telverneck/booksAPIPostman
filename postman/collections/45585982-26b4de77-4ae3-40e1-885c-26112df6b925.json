@@ -88,6 +88,21 @@
 				},
 				{
 					"name": "Books with parameters Type not found",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fa2488e9-e8a1-4c19-b7ef-76a15f444416",
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-c97ceaf8-8000-4b74-ac91-d3442b51ee89",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -115,6 +130,21 @@
 				},
 				{
 					"name": "Books with parameters 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ab81e3bc-b68f-4382-be99-55de48c81d37",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-352ed561-910e-49de-ad6c-618200e36881",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
