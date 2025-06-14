@@ -18,9 +18,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books",
+							"raw": "{{base_url}}/books",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books"
@@ -39,9 +39,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books?type=fiction",
+							"raw": "{{base_url}}/books?type=fiction",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books"
@@ -66,9 +66,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books?type=horror",
+							"raw": "{{base_url}}/books?type=horror",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books"
@@ -93,9 +93,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books?limit=2",
+							"raw": "{{base_url}}/books?limit=3",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books"
@@ -103,7 +103,7 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "2"
+									"value": "3"
 								}
 							]
 						}
@@ -120,9 +120,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_utl}}/books?limit=-2",
+							"raw": "{{base_url}}/books?limit=-2",
 							"host": [
-								"{{base_utl}}"
+								"{{base_url}}"
 							],
 							"path": [
 								"books"
