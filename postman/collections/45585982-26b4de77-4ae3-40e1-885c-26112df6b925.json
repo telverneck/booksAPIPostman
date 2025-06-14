@@ -270,6 +270,21 @@
 				},
 				{
 					"name": "Submit order Out of stock",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bdfe4f9-b58c-4dc4-b0d9-36e22a7af4da",
+								"exec": [
+									"pm.test(\"Status code is 400\", function () {\r",
+									"    pm.response.to.have.status(400);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-21702143-86c8-4ee6-910b-b99569eb018a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
