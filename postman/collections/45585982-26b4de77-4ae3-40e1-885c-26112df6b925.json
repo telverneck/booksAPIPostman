@@ -256,6 +256,21 @@
 				},
 				{
 					"name": "Books with id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8957985c-7752-4958-b3fa-85de07d40af0",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-da4fbd59-1947-451b-be1b-c71473260615",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
