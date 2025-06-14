@@ -766,7 +766,22 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"\r",
+							"pm.test(\"Should contain OK\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"OK\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body é exatamente { status: 'OK' }\", function () {\r",
+							"    const expectedBody = {\r",
+							"        status: \"OK\"\r",
+							"    };\r",
+							"    \r",
+							"    const responseJson = pm.response.json();\r",
+							"\r",
+							"    pm.expect(responseJson).to.eql(expectedBody);\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript",
 						"packages": {}
