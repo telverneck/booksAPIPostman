@@ -631,6 +631,62 @@
 					"response": []
 				},
 				{
+					"name": "Orders with ID Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "93459adc-ea4e-4a4c-a92d-1d216efeb373",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"id": "45585982-e551a846-aea5-40c9-a470-b5b22afc1d60",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/orders/ot5vzfieciDk1J2uKhpi2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"orders",
+								"ot5vzfieciDk1J2uKhpi2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Delete order",
 					"event": [
 						{
