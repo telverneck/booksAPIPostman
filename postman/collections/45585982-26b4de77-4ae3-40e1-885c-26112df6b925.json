@@ -178,7 +178,7 @@
 							"script": {
 								"id": "d04de330-71af-4886-9b2b-6bcc7f006d91",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
+									"pm.test(\"Status code is 400\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});"
 								],
