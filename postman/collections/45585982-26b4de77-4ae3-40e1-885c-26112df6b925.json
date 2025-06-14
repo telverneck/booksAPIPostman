@@ -172,6 +172,21 @@
 				},
 				{
 					"name": "Books with parameters - out of limit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d04de330-71af-4886-9b2b-6bcc7f006d91",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "45585982-fc5ade1d-7876-4e1a-b23b-b01f725537bf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
