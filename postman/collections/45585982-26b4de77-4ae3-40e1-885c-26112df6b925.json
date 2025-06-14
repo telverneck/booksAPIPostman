@@ -356,8 +356,8 @@
 							"script": {
 								"id": "d281300a-0755-465f-952f-646f5b7f5bdb",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
 									"});\r",
 									"let response = pm.response.json();\r",
 									"pm.environment.set(\"orderId\", response.orderId);"
